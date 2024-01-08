@@ -1,0 +1,85 @@
+body{
+    background-color: #629D66;
+    background-image: url(img/bg.png);
+    background-repeat: repeat-x;
+    font-family: "Trebuchet MS", Arial;
+}
+
+main{
+    max-width: 900px;
+    margin: auto;
+    text-align: justify;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "h h h"
+    "n a a"
+    "f f f";
+}
+
+header{
+    grid-area: h;
+    color: beige;
+    background-image: url(img/logo1.jpg);
+    font-size: 80px;
+    padding: 40%;
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+
+nav{
+    grid-area: n;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+nav>div{
+    background-image: url(img/img02.gif);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-color: #96A96F;
+}
+
+nav>div>h3{
+    background-color: #203926;
+    color: white;
+}
+article{
+    grid-area: a;
+    max-width: 700px;
+    font-size: 12pt;
+}
+
+article>div{
+    width: 600px;
+}
+
+p{
+    text-align: justify;
+}
+
+article>p>img{
+    float: left;
+    margin: 5pt;
+    margin-right: 20px;
+}
+
+footer{
+    grid-area: f;
+    text-align: center;
+    background-color: gray;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: #203926;
+}
+
+a:hover{
+    color: green;
+}
